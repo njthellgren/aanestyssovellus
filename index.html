@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="./img/kaavio.png">
+    <title>Äänestyssovellus</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="header">
+    <h1>Äänestyssovellus</h1>
+</div>
+
+<div class="loginDiv">
+    <input type="text" value="" id="usernameInput" class="input-field" placeholder="käyttäjätunnus">    
+    <input type="password" value="" id="passwordInput" class="input-field" placeholder="salasana">
+    <br><button class="loginButton">Kirjaudu sisään</button>
+</div>
+
+<div class="pollsDiv"></div>
+
+<div class="adminDiv" style="display: none;">
+    <input type="text" id="pollQuestion" placeholder="Mitä haluat kysyä?" class="pollInputField">    
+    <div id="pollOptionsContainer">
+        <input type="text" id="option1" placeholder="Vastausvaihtoehto" class="pollInputField">
+        <input type="text" id="option2" placeholder="Vastausvaihtoehto" class="pollInputField">
+    </div>
+    
+    <button disabled id="removeOptionButton">Poista vastausvaihtoehto</button>
+    <button id="addOptionButton">Lisää vastausvaihtoehto</button>
+    <button id="createPollButton">Luo kysely</button>
+</div>
+
+
+<script src="./main.js"></script>
+</body>
+</html>
